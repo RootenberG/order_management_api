@@ -4,7 +4,6 @@ from sqlalchemy import Column, ForeignKey, Integer, DateTime, String
 from app.db.base_class import Base
 
 
-
 class Order(Base):
     id = Column(Integer, primary_key=True, index=True)
     user_id = Column(Integer, ForeignKey("user.id"))

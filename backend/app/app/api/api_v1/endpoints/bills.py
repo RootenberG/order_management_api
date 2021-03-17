@@ -72,7 +72,7 @@ def update_bill(
     current_user: models.User = Depends(deps.get_current_active_user),
 ) -> Any:
     """
-    Update an item.
+    Update a bill.
     """
     bill = crud.bill.get(db=db, id=id)
     if not bill:
